@@ -1,0 +1,384 @@
+Java is a popular procedural and object-oriented programming language. It was created in 1995 and it is owned by oracle.
+
+Java is secure ,fast and powerful programming language. Java works on different platforms likes windows,mac,linux...
+
+Java can be used for mobile applicatons , web based and desktop applications and server based applications.
+
+HELLO WORLD PROGRAM IN JAVA:
+  class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+    }
+}
+
+In java programming language that incorporates the concept of object-oriented programming to the fullest.
+
+AIRTHMETIC OPERATIONS IN JAVA:
+1)Addition(+) this sign gives the sum of the two numbers.
+EXample;
+class Addition {
+    public static void main(String[] args) {
+        System.out.println(2 + 5);
+        System.out.println(1 + 1.5);
+    }
+}
+
+2) Subtraction (-) this sign gives the difference between the two numbers.
+
+class Subtraction {
+    public static void main(String[] args) {
+        System.out.println(5 - 2);
+    }
+}
+
+3)Multiplication (*) this sign gives the product of the two numbers.
+class Multiplication {
+    public static void main(String[] args) {
+        System.out.println(5 * 2);
+        System.out.println(5 * 0.5);
+    }
+}
+
+4) Division (/) it returns the quotient as a result
+
+class Division {
+    public static void main(String[] args) {
+        System.out.println(5 / 2);
+        System.out.println(4 / 2);
+    }
+}
+
+5) Modulo operation (%) it returns the remainder as a result.
+class Modulus {
+    public static void main(String[] args) {
+        System.out.println(5 % 2);
+        System.out.println(4 % 2);
+    }
+}
+
+VARIABLES:
+Variables are like containers for storing information.
+
+A variable is created when it is declared , and to declare a variable, we must specify the type of data first, followed by the variable.
+
+class Main {
+    public static void main(String[] args) {
+       int points;  // Declaration
+       points = 90;  // Initialization
+       int totalPoints = 100;  // Definition
+
+       System.out.println(points);
+       System.out.println(totalPoints);
+    }
+}
+
+Note: Java programming language is a atatically typed language, we cannot change the type of the variable once it is declared..
+
+in java variables can be reassigned like this
+class Main {
+    public static void main(String[] args) {
+        int a = 1;
+        System.out.println(a);
+        a = 2;
+        System.out.println(a);
+    }
+}
+
+The final variable cannot be reassigned.
+class Main {
+    public static void main(String[] args) {
+        final int SPEED_LIMIT = 60;
+        System.out.println(SPEED_LIMIT);
+    }
+}
+
+BODMAS: the standard order of evaluting an expression.
+
+In java statements are terminated with the semi-colon(;).
+
+In java , ablock of code is enclosed between balanced brackets({}).
+
+Comments :
+* single line comments are started with //
+* Multi line comments are started with /* */.
+
+
+Data types:
+ in programming language , every value has an associated type is known as datatype.They are two types 
+
+1)Primitive data types are those that are predefined by the programming language (Java).
+1= Boolean in general anything that can take one of two possible values is considered as Boolean.
+
+2=Char this type of data type is used to store a single character char alphabet = 'A';
+
+3= Byte data type is used to store integers without any fractional part.It is used to store small values,the range is -128 to 127.byte points = 100;
+
+4=The short data type is used to store integers without any fractional part. It is used to store values that are bigger than a byte. The range of values is -32,768 to 32,767.short number = 28745;
+
+5=The int data type is used to store integers without any fractional part. It is used to store values that are bigger than short. The range of values is -231 to 231-1.int distance = 2036372;
+
+6=The long data type is used to store large integers without any fractional part. It is used to store values that are bigger than int. The range of values is -263 to 263-1
+
+The long values should contain the suffix 'l' or 'L'
+long area = 203637254L;
+
+
+7=The float data type is used to store any number with a decimal point. The float data type stores a value up to 7-point precision (ex: 12.1234567). Hence, it is used when less precision is required.
+
+The float values should contain the suffix 'f' or 'F'
+float height = 5.10f;
+
+8=The double data type is used to store any number with a decimal point. The double data type stores a value up to 16-point precision. Hence, it is used when more precision is required.
+
+The double values may contain the suffix 'd' or 'D'
+double length = 5.112;
+double breadth = 9.2345D;
+
+These data types are used to store multiple values. Non-primitive data types are defined by the programmer.
+
+
+String
+
+The String data type is simply a sequence of characters. For example, "Rahul" is a string that consists of the characters 'R', 'a', 'h', 'u', and 'l'.
+
+In Java, double quotes (") are used to represent a string.
+
+String name = "Rahul";
+Possible Mistake
+
+Double quotes (") are used to represent a string in Java. Using single quotes (') for strings results in an error.
+
+class Main {
+    public static void main(String[] args) {
+        String name = "Rahul";
+        System.out.println(name);
+    }
+}
+
+1.PACKAGES:
+
+In Java, a package is a group of related classes, sub-packages, etc. Packages can be conceptually compared to different folders (also called directories) on your computer.
+
+The package consists of re-usable code, which eliminates the need for the programmer to write the same code several times.
+
+Java provides a number of built-in packages. For example,
+
+java.lang
+java.util
+java.net, etc.
+To utilize a package or a specific class, we need to use import keyword.
+import java.util.*;
+
+Using an asterisk (*) imports a whole package along with all the classes contained within.
+
+Java also gives us the option of importing a specific class from a package based on our requirements.
+
+The below statement imports the Scanner class from the java.util package.
+import java.util.Scanner;
+
+The Scanner class in the package java.util is used to read user input.
+
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+     Scanner input = new Scanner(System.in);
+        String username = input.nextLine();
+
+        System.out.println(username);
+        input.close();  // closing Scanner object
+    }
+}
+
+Here, calling new Scanner() will return an object and it is assigned to the variable named input
+
+The System.in parameter is used to read input from the standard input (i.e., keyboard).
+
+nextLine() method is used to read a String value till the end of line.
+
+Calling input.close(), closes the Scanner object input. We cannot read the user input once it is closed.
+
+It is a good programming practice to explicitly close the Scanner using the close() method once you are done using it.
+
+
+Summary
+import keyword is used to import packages in Java.
+Scanner class is used to read input from the user and it provides different methods for taking different input types from the user.
+print() and the println() methods are used to print output to the console.
+print() function prints in the same line whereas, println() function goes to new line after printing.
+
+
+
+
+nextInt()	Reads an int value
+nextLong()	Reads a long value
+nextFloat()	Reads a float value
+nextBoolean()	Reads a boolean value
+next()	Reads a String value only until a space(" ") is encountered
+nextLine()	Reads a String value till the end of line
+nextDouble()	Reads a double value
+nextShort()	Reads a short value
+nextByte()	Reads a byte value
+
+We can also check tnhe data type of the variable or value by calling getClass().getSimpleName() method.
+class Main {
+    public static void main(String[] args) {
+        String username = "Ravi";
+        System.out.println(username.getClass().getSimpleName());
+    }
+}
+o/p is String
+
+we can convert primitive data type into an object using OBJECT keyeword
+System.out.println((Object)age)getClass().getSimpleName());
+
+
+TYPE CONVERSION:-
+  It is a process of converting the value of one data type into another data type
+
+1)Java compiler automatically convert one data type into another datatype is called Implicit type conversion.
+
+char -> byte -> short -> int -> long -> float -> double -> boolean -> String
+
+If an expression contains values of more than one data type, the lower data type values will be converted to a higher data type.
+
+class Main {
+    public static void main(String[] args) {
+        int value1 = 4;
+        long value2 = 5L;
+        System.out.println(((Object) (value1 + value2)).getClass().getSimpleName());
+    }
+}
+
+2) Programmers change the data type of a value to the desired data type is called Explicit type conversion.
+
+class Main {
+    public static void main(String[] args) {
+        long x = 10L;
+        float y = (float) x;
+        System.out.println(y);
+    }
+}
+
+Conversion using methods
+String.valueOf(): converts any primitive data type into a string.
+Integer.parseInt(): convert String to int data type.
+Character.getNumericValue(): converts char to int data type.
+Character.forDigit(): converts int to char.
+Double.parseDouble(str): convert String to double data type.
+Float.parseFloat(str): convert String to float data type.
+
+
+STRING METHODS:- String is a sequence of characters.
+
+In java strings are objects of a class called String.
+1)string concatenation= It involves joining teo or more strings together to create a new string.
+class Main {
+    public static void main(String[] args) {
+        String str1 = "Hello ";
+        String str2 = "World";
+        String concatenatedString = str1.concat(str2);
+
+        System.out.println(concatenatedString);
+    }
+}
+
+We can also use + operator to concatenation strings.Multiple values of any primitive datatype can be concatenated with a string using + operator.
+
+class Main {
+    public static void main(String[] args) {
+        String str1 = "Hello ";
+        String str2 = "World ";
+        int value = 3;
+        String concatenatedString = str1 + str2 + value;
+
+        System.out.println(concatenatedString);
+    }
+}
+
+
+2) LENGTH OF THE STRING:-
+the string object has a length() method that returns the number of characters in a given string.
+
+class Main {
+    public static void main(String[] args) {
+        String name = "Rahul";
+        int stringLength = name.length();
+
+        System.out.println(stringLength);
+    }
+}
+
+3)STRING INDEXING:-
+ WE can acess an individual character in a string using their positions which start fronm 0.These positions are also called indexes.
+The charAt() method is used to get the character at a specified index in a string.
+class Main {
+    public static void main(String[] args) {
+        String name = "Rahul";
+        char firstLetter = name.charAt(0);
+
+        System.out.println(firstLetter);
+    }
+}
+
+
+4) STRING SLICING:-
+ Obtaining a part of a string is called string slicing.
+THE substring() method is used to access a part of the string.
+
+class Main {
+    public static void main(String[] args) {
+        String message = "Welcome to Java";
+        String part = message.substring(0, 5);
+
+        System.out.println(part);
+    }
+}
+
+
+5)STRING REPETITION:-
+class Main {
+    public static void main(String[] args) {
+        String str = "Rahul";
+
+        System.out.println(str.repeat(2));
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
