@@ -1,0 +1,68 @@
+To design responsive web design we need to learn two mandatory languages . They are HTML(Hyper text markup language) and CSS (Cascading style sheets).
+            
+            HTML:-
+
+
+1)HTML elments have opening tags like <h1> and closing tags </h1>. the text we write in between open and closing tags.
+EX.<h1> Nandu </h1>.
+2) From h1 to h6 we have heading elements those are used to specify the importance of the contrent below them.
+h1>h2>h3>h4>h5>h6.
+3) Tht p element is used to create a paragraph text on websites.
+4) A comment in html starts with <!-- and ends with -->.
+HTml has some elements to identify the different content areas.THese elements made html easier to read and help with the search in engine optimization and accessibility.
+EX.<html>
+  <body>
+  <main>
+    <h1>CatPhotoApp</h1>
+    <h2>Cat Photos</h2>
+    <!-- TODO: Add link to cat photos -->
+      <p>See more cat photos in our gallery.</p>
+    </main>
+    
+  </body>
+</html>
+5) In the previous step we put h1,h2,comment and p elements inside the main element. This is called nesting.Nested elements should be placed two spaces further to the right of the elements they are in nested in. This spacing is called Indentation and it is used to make HTML easier to read.
+6)WE can add images to websites
+we using img element . The image element have an opening tag without a closing tag. A tag for an element without a closing tag is known as a self-closing tag.EX.<img>
+7)  HTML attributes are special words used inside the opening tag for an element to control the element's behaviour.The src attribute in an img element specifies the image url.EX=<img src="https://cdn.freecodecamp.org/platform/universal/fcc_secondary.svg">.
+8)All images elements have an alt attribute. The alt attribute's text is used for screnn readers to improve accessibility and is displayed if the image fails to load. EX=<img src="cat.jpg" alt="A cat"> has an alt attribute with the text A cat.
+9)We can link another page with anchor elements ex=<a href="https://freecatphotoapp.com"></a>.
+10)Now we are adding section elements like this <section> </section>.
+11)Now we can denote ordered and unordered lists like this <ul>,<ol> closing tags are </ul>,</ol>.
+12)In order and unorder list again we are listing elements like this 
+<ul>
+<li> nandu</li>
+<li>nandini</li>
+</ul>.
+13)The figure element represents self-contained and will allow you to associate an image with a caption.
+example:- <figure> 
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+          <figcaption>Cats love lasagna</figcaption>
+          
+        </figure>
+
+in the above code it represents figcaption it means the caption of figure..
+
+14)The strong element is used to indicate that some text is of strong importance or urgent.
+
+15)Action attribute indicates where form data should be sent.For example tells the browser that the form data should be sent to the path.
+
+16)Input element allows you several ways to collect data from a web form.Input elements are self closing no need of closing tags.
+
+17)There are many kinds of inputs you can create using the type attribute.ex=password,resetbutton,text,etc....
+
+18)We must give the textfield name attribute and value.ex= <input type="text" name="catphotourl">.
+
+19)Placeholder text is used to give people a hint about what kind of information to enter into an input ex==<input type="text" placeholder="Email address">.
+
+20)By using button element to create a clickable button ex==<button>Click Here</button> creates a button with the text Click Here.
+
+21)Even though we added button element below the text input, they appearnext to each other on the page.Because both input and button elements are inline elements,which dont appear on new lines.
+
+22)Label elements are used to help associate the text for an inputnelement with the input element itself ex== <label><input type="radio"> cat</label> makes it so clicking the word cat also selects the corresponding radio button.
+
+23)The id attribute is used to identify the specific html elements.Each id attribute value must be unique fromm all other id values for the entire page.Notice that both radio buttons can be selected at the same time. To make it so selecting one radio button automatically deselects the other, both buttons must have a name attribute with the same value.
+
+24)The fieldset element is used to group related inputs and labels together in aweb form .the Fieldset elements are block-level elements , meaning they appear on a new line.
+
+25)The legend element acts as a caption for the content in the fieldset element.it gives users context about what thay should enter into that part of the form.
